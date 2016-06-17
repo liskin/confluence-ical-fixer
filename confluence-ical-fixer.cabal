@@ -1,0 +1,18 @@
+name:                confluence-ical-fixer
+version:             0.1.0.0
+synopsis:            Fix iCal from Confluence for import into Google Calendar
+homepage:            https://github.com/liskin/confluence-ical-fixer
+license:             BSD3
+license-file:        LICENSE
+author:              Tomas Janousek
+maintainer:          tomi@nomi.cz
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable confluence-ical-fixer
+  main-is:             Main.hs
+  -- other-modules:       
+  -- other-extensions:    
+  build-depends:       base >=4.8 && <4.9, data-default >=0.5 && <0.6, iCalendar >=0.4 && <0.5, bytestring >=0.10 && <0.11, containers >=0.5 && <0.6
+  -- hs-source-dirs:      
+  default-language:    Haskell2010
