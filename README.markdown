@@ -6,4 +6,4 @@ they can be correctly imported into Google Calendar.
 # Usage
 
     $ cabal install
-    $ confluence-ical-fixer <xxx.ics >xxx-fixed.ics
+    $ perl -p -0777 -e 's/CN=(.*?);/CN="$1";/gs' <xxx.ics | confluence-ical-fixer >xxx-fixed.ics
