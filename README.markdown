@@ -5,5 +5,7 @@ they can be correctly imported into Google Calendar.
 
 # Usage
 
-    $ cabal install
-    $ perl -p -0777 -e 's/CN=(.*?);/CN="$1";/gs' <xxx.ics | confluence-ical-fixer >xxx-fixed.ics
+    $ cabal configure
+    $ cabal build
+    $ ./confluence-ical-fixer.pl <xxx.ics >xxx-fixed.ics
+    $ FIXME
